@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -17,7 +22,7 @@
   align-self: flex-end;
 }
 
-.flex-column > label {
+.flex-column>label {
   color: #151717;
   font-weight: 600;
 }
@@ -44,7 +49,7 @@
 }
 
 .inputForm:focus-within {
-      outline: none;
+  outline: none;
   border: 1.5px solid #161A1D;
 }
 

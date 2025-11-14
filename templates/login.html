@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/forum/styles/login.css">
+    <link rel="stylesheet" href="/styles/login.css">
 </head>
 
 <body>
+
     <div class="container">
         <form class="form">
-        <div class="flex-column">
-            <label>Email </label>
-        </div>
-        <div class="inputForm">
-            <input type="text" class="input" placeholder="Enter your Email">
-        </div>
+            {{if .}}
+            <div class="error">{{.}}</div>
+            {{end}}
+            <div class="flex-column">
+                <label>Email </label>
+            </div>
+            <div class="inputForm">
+                <input type="text" class="input" placeholder="Enter your Email">
+            </div>
 
-        <div class="flex-column">
-            <label>Password </label>
-        </div>
-        <div class="inputForm">
-            <input type="password" class="input" placeholder="Enter your Password">
-        </div>
+            <div class="flex-column">
+                <label>Password </label>
+            </div>
+            <div class="inputForm">
+                <input type="password" class="input" placeholder="Enter your Password">
+            </div>
 
-        <button class="button-submit">Sign In</button>
-        <p class="p">Don't have an account? <a href="/forum/templates/register.html"> <span class="span">Sign up</span></p></a>
-    </form>
+            <button class="button-submit">Sign In</button>
+            <p class="p">Don't have an account? <a href="/templates/register.html"> <span class="span">Sign up</span>
+            </p></a>
+        </form>
     </div>
-    </body>
+</body>
 </body>
 
 </html>

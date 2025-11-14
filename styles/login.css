@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.error{
+  text-align: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;

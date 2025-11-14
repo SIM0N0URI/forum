@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/forum/styles/login.css">
+    <link rel="stylesheet" href="/styles/login.css">
 </head>
 
 <body>
     <div class="container">
         <form class="form">
+            {{if .}}
+            <div class="error">{{.}}</div>
+            {{end}}
             <div class="flex-column">
                 <label>Username </label>
             </div>
@@ -33,8 +36,10 @@
             </div>
 
             <button class="button-submit">Sign In</button>
-            <p class="p">You already have an account?<a href="/forum/templates/login.html"><span class="span">Log
-                        in</span></p></a>
+            <p class="p">You already have an account?<a href="/templates/login.html"><span class="span">Log in</span>
+            </p></a>
+            <p class="p">Or you want to stay loged-out?<a href="/"><span class="span"><span>Back to home</span></a></p>
+
         </form>
     </div>
 </body>
